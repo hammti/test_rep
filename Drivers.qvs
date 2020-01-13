@@ -1,0 +1,14 @@
+﻿Drivers:
+LOAD
+    driverId,
+    driverRef,
+    number		as driver_number,
+    code,
+    forename,
+    surname,
+    forename & ' ' & surname as fullname,
+    dob as dateofbirth,
+    nationality,
+    "url"		as driver_url
+FROM [lib://F1_test/F1-Data.xlsx]
+(ooxml, embedded labels, table is Drivers);
